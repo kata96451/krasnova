@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kata96451/krasnova.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kata96451/krasnova/issues"
+  },
+  "homepage": "https://github.com/kata96451/krasnova#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
