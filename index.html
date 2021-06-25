@@ -1,1 +1,106 @@
-ghjjhgffjfjhfhfhfhfhf
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Таблица форм</title>
+    <style type="text/css">
+        TABLE {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        TD, TH {
+            padding: 50px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" enctype="multipart/form-data" method="post">
+        <table>
+            <tr>
+                <td>
+                    <select name="select1">
+                        <option value="v1">Вариант №1</option>
+                        <option value="v2">Вариант №2</option>
+                        <option value="v3">Вариант №3</option>
+                        <option value="v4">Вариант №4</option>
+                        <option value="v5">Вариант №5</option>
+                    </select>
+                    <button type="submit">Отправить</button>
+                </td>
+                <td>
+                    <select name="select2" size="5">
+                        <option value="v1">Вариант №1</option>
+                        <option value="v2">Вариант №2</option>
+                        <option value="v3">Вариант №3</option>
+                        <option value="v4">Вариант №4</option>
+                        <option value="v5">Вариант №5</option>
+                    </select>
+                    <button type="submit">Отправить</button></td>
+                <td>
+                    <label> <b>Укажите цифру:</b></и>
+                        <p><input type="text" maxlength="5" size="5"></p>
+                    </label>
+                </td>
+                <td>
+                    <input type="number" placeholder="Вариант №1">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="reset">Очистить</button>
+                </td>
+                <td>
+                    <input type="search" name="search" placeholder="Поиск по сайту">
+                    <button type="submit">Найти</button>
+                </td>
+                <td>
+                    <label><b>Укажите цвет фона:</b>
+                        <input type="color" name="color" value="#ff0000">
+                        <input type="submit" value="Выбрать">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label> <b>Укажите</b>
+                        <p>
+                            <input type="radio" name="BUTTON" value="r1">Radio BUTTON <br>
+                            <input type="radio" name="BUTTON" value="r2">Radio BUTTON<br>
+                            <input type="radio" name="BUTTON" value="r3">Radio BUTTON
+                        </p>
+                        <button type="submit">Submit</button>
+                    </label>
+                </td>
+                <td>
+                    <label for="textarea"> <b>Введите текст:</b></label>
+                        <p><textarea name="textarea" id="textarea"></textarea></p>
+                        <input type="submit" value="Submit">
+                </td>
+                <td>
+                    <label><b>Укажите дату</b>
+                        <p><input type="checkbox" name="date" value="d1">2010</p>
+                        <p><input type="checkbox" name="date" value="d2">2014</p>
+                        <p><input type="checkbox" name="date" value="d3">2017</p>
+                        <p><input type="checkbox" name="date" value="d4">2019</p>
+                        <input type="submit" value="Отправить">
+                    </label>
+                </td>
+                <td>
+                    <label ><b>Загрузите фотографии</b>
+                        <p>
+                            <input type="file" name="photo" multiple accept="image/*">
+                            <button type="submit">Отправить</button>
+                        </p>
+                    </label>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
