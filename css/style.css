@@ -1,12 +1,12 @@
 body{
     font-family: Calibri, sans-serif;
-    width: 1920px;
+    width: 100%;
+    margin: 0;
 }
 header {
     background-color: #43b1d2;
-    width: 75%;
-    padding-left: 230px;
-    padding-right: 230px;
+    width: 100%;
+    justify-content: center;
     height: 120px;
     display: flex;
 }
