@@ -2,13 +2,17 @@ body{
     font-family: Calibri, sans-serif;
     width: 100%;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 header {
     background-color: #43b1d2;
     width: 100%;
-    justify-content: center;
     height: 120px;
+}
+.header{
     display: flex;
+    justify-content: center;
 }
 .logo {
     display: flex;
@@ -54,4 +58,17 @@ li {
     list-style-type: none;
     font-size: 24px;
     color: #494848;
+}
+.button_up{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    right: 150px;
+    bottom: 100px;
+}
+main{
+
+    padding-right: 14%;
+    padding-left: 14%;
+    text-align: justify;
 }
