@@ -1,9 +1,12 @@
-body{
-    font-family: Calibri, sans-serif;
-    width: 100%;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    font-family: Calibri, sans-serif;
+    width: 100%;
+
 }
 header {
     background-color: #43b1d2;
@@ -12,11 +15,11 @@ header {
 }
 .header{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .logo {
     display: flex;
-    width: 375px;
+    justify-content: flex-start;
     padding-top: 35px;
     color: #ffffff;
     font-weight: bold;
@@ -27,28 +30,31 @@ header {
     text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.35);
 }
 .logo img{
-    width: 65px;
+    width: 80px;
     height: 55px;
     padding-right: 30px;
 }
 .menu {
-    width: 1095px;
     padding-top: 30px;
+    flex-direction: column;
 }
 .tel {
     color: #fff;
     font-weight: bold;
     text-decoration: none;
-    padding-left: 900px;
     font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
 }
 .tel img {
     vertical-align: middle;
     padding-right: 15px;
 }
 ul {
+    padding-top: 23px;
     display: flex;
-    padding-left: 180px;
+    display: flex;
+    justify-content: flex-end;
 }
 li:hover {
     color: white;
@@ -56,19 +62,19 @@ li:hover {
 li {
     padding-left: 30px;
     list-style-type: none;
-    font-size: 24px;
+    font-size: 20px;
     color: #494848;
 }
 .button_up{
     width: 70px;
     height: 70px;
     position: fixed;
-    right: 150px;
+    right: 60px;
     bottom: 100px;
 }
 main{
 
     padding-right: 14%;
-    padding-left: 14%;
+    padding-left: 15%;
     text-align: justify;
 }
