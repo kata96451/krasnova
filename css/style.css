@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+.width{
+    width: 1440px;
+    margin: auto;
+}
 body{
     font-family: Calibri, sans-serif;
     width: 100%;
@@ -15,7 +19,7 @@ header {
 }
 .header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .logo {
     display: flex;
@@ -27,7 +31,7 @@ header {
     font-size: 24px;
     line-height: 1.25;
     text-align: left;
-    text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.35);
+    text-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
 }
 .logo img{
     width: 80px;
@@ -53,7 +57,6 @@ header {
 ul {
     padding-top: 23px;
     display: flex;
-    display: flex;
     justify-content: flex-end;
 }
 li:hover {
@@ -73,8 +76,6 @@ li {
     bottom: 100px;
 }
 main{
-
-    padding-right: 14%;
-    padding-left: 15%;
+    padding: 0 70px;
     text-align: justify;
 }
