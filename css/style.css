@@ -3,6 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: Calibri;
+    src: url("../fonts/Calibri.ttf") format('ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Calibri Bold";
+    src: url("../fonts/Calibri-Bold.ttf") format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri Italic';
+    src: url('../fonts/Calibri-Italic.ttf') format('ttf');
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url('../fonts/MyriadPro-Bold.ttf') format('ttf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-Regular.ttf') format('ttf');
+    font-style: normal;
+    font-weight: normal;
+}
 .width{
     width: 1440px;
     margin: auto;
@@ -42,7 +75,8 @@ header {
 }
 .menu {
     float: right;
-    padding-top: 30px;
+    padding-top: 23px;
+    padding-bottom: 25px;
 }
 .tel {
     display: flex;
@@ -50,10 +84,9 @@ header {
     color: #fff;
     font-weight: bold;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
 }
 .tel img {
-    vertical-align: middle;
     padding-right: 15px;
 }
 .menu_ul {
@@ -86,19 +119,21 @@ main{
     background-color: #cbd4e6;
 }
 .info_tel {
+    display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    align-items: flex-end;
     background-image: url('../img/Layer1.png');
     background-repeat: no-repeat;
 }
-.info_tel__text {
-    font-size: 24px;
+.info_tel__text1 {
+    font-size: 23px;
     color: rgb(73, 72, 72);
     line-height: 1.25;
     text-align: right;
     padding-top: 125px;
 }
 .info_tel__text2 {
+    padding-top: 60px;
     font-size: 36px;
     color: rgb(73, 72, 72);
     font-weight: bold;
@@ -106,23 +141,64 @@ main{
     text-align: right;
 }
 .form-tel{
+    padding-top: 50px;
+    padding-bottom: 45px;
     display: flex;
 }
 .form-tel__input{
+    padding-left: 12px;
     color: #6c757d;
-    font-size: 11px;
+    font-size: 14px;
     border: 1px solid #ced4da;
     border-radius: 5px 0 0 5px;
     border-right: none;
     width: 225px;
 }
 .form-tel__button{
-    float: right;
     color: #6c757d;
     background-color: #cbd4e6;
     border: 1px solid #6c757d;
-    font-size: 11px;
+    font-size: 14px;
     padding: 10px 15px;
     width: 105px;
     border-radius: 0 5px 5px 0;
+}
+.list-value{
+    display: flex;
+
+}
+.items-column1{
+    background-color: #43b1d2;
+}
+.items-column2{
+    background-color: #3fb6c6;
+}
+.items-column3{
+    background-color: #3cbbbb;
+}
+.items-column4{
+    background-color: #37c3a8;
+}
+.items-column__icon{
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+.items-column__title {
+    font-size: 27px;
+    font-family: 'Myriad Pro Bold', serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    -moz-transform: matrix( 0.37114373088939,0,0,0.37088617104839,0,0);
+    -webkit-transform: matrix( 0.37114373088939,0,0,0.37088617104839,0,0);
+    -ms-transform: matrix( 0.37114373088939,0,0,0.37088617104839,0,0);
+    padding-top: 30px;
+}
+.items-column__text{
+    width: 360px;
+    padding: 0 50px;
+    padding-top: 30px;
+    padding-bottom: 55px;
+    text-align: center;
 }
