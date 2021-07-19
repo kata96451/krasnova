@@ -4,35 +4,35 @@
     box-sizing: border-box;
 }
 @font-face {
-    font-family: Calibri;
-    src: url("../fonts/Calibri.ttf") format('ttf');
+    font-family: сalibri;
+    src: url("../fonts/calibri.woff2") format('woff2');
     font-style: normal;
     font-weight: normal;
 }
 @font-face {
-    font-family: "Calibri Bold";
-    src: url("../fonts/Calibri-Bold.ttf") format('ttf');
+    font-family: сalibri;
+    src: url("../fonts/calibri-bold.woff2") format('woff2');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Calibri Italic';
-    src: url('../fonts/Calibri-Italic.ttf') format('ttf');
+    font-family: сalibri;
+    src: url('../fonts/calibri-italic.woff2') format('woff2');
     font-style: italic;
     font-weight: normal;
 }
 
 @font-face {
-    font-family: 'Myriad Pro Bold';
-    src: url('../fonts/MyriadPro-Bold.ttf') format('ttf');
+    font-family: 'myriad pro';
+    src: url('../fonts/myriadpro-bold.woff2') format('woff2');
     font-style: normal;
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Myriad Pro';
-    src: url('../fonts/MyriadPro-Regular.ttf') format('ttf');
+    src: url('../fonts/myriadpro-regular.woff2') format('woff2');
     font-style: normal;
     font-weight: normal;
 }
@@ -61,7 +61,6 @@ header {
     text-decoration: none;
     font-size: 24px;
     line-height: 1.25;
-    text-align: left;
     text-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
 }
 .logo span{
@@ -89,6 +88,7 @@ header {
 .tel img {
     padding-right: 15px;
 }
+
 .menu_ul {
     padding-top: 23px;
     display: flex;
@@ -126,22 +126,25 @@ main{
     background-repeat: no-repeat;
 }
 .info_tel__text1 {
-    font-size: 23px;
+    font-size: 22px;
     color: rgb(73, 72, 72);
     line-height: 1.25;
     text-align: right;
-    padding-top: 125px;
+    padding-top: 110px;
+    max-width: 620px;
 }
 .info_tel__text2 {
+    font-family: 'Myriad Pro', sans-serif;
     padding-top: 60px;
     font-size: 36px;
     color: rgb(73, 72, 72);
     font-weight: bold;
     line-height: 1;
     text-align: right;
+    width: 450px;
 }
 .form-tel{
-    padding-top: 50px;
+    padding-top: 55px;
     padding-bottom: 45px;
     display: flex;
 }
@@ -186,19 +189,20 @@ main{
 }
 .items-column__title {
     font-size: 27px;
-    font-family: 'Myriad Pro Bold', serif;
+    font-family: 'Myriad Pro', sans-serif;
     color: rgb(255, 255, 255);
-    line-height: 1.2;
+    font-weight: bold;
     text-align: center;
-    -moz-transform: matrix( 0.37114373088939,0,0,0.37088617104839,0,0);
-    -webkit-transform: matrix( 0.37114373088939,0,0,0.37088617104839,0,0);
-    -ms-transform: matrix( 0.37114373088939,0,0,0.37088617104839,0,0);
-    padding-top: 30px;
+    padding-top: 16px;
 }
 .items-column__text{
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 14px;
+    line-height: 1.875;
+    color: rgb(255, 255, 255);
     width: 360px;
-    padding: 0 50px;
-    padding-top: 30px;
-    padding-bottom: 55px;
+    padding: 24px 50px 55px;
     text-align: center;
+
 }
+
