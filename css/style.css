@@ -4,27 +4,27 @@
     box-sizing: border-box;
 }
 @font-face {
-    font-family: сalibri;
+    font-family: Calibri;
     src: url("../fonts/calibri.woff2") format('woff2');
     font-style: normal;
     font-weight: normal;
 }
 @font-face {
-    font-family: сalibri;
+    font-family: Calibri;
     src: url("../fonts/calibri-bold.woff2") format('woff2');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: сalibri;
+    font-family: Calibri;
     src: url('../fonts/calibri-italic.woff2') format('woff2');
     font-style: italic;
     font-weight: normal;
 }
 
 @font-face {
-    font-family: 'myriad pro';
+    font-family: 'Myriad Pro';
     src: url('../fonts/myriadpro-bold.woff2') format('woff2');
     font-style: normal;
     font-weight: bold;
@@ -168,7 +168,7 @@ main{
 }
 .list-value{
     display: flex;
-
+    padding-bottom: 35px;
 }
 .items-column1{
     background-color: #43b1d2;
@@ -205,4 +205,49 @@ main{
     text-align: center;
 
 }
+.tabs{
+    position: relative;
+}
+.tabs__items{
+    display: flex;
+    justify-content: flex-start;
 
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #494848;
+}
+.tabs__item1{
+    width: 85px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 2px solid #e2e6e8;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0 ;
+
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 2;
+}
+.tabs__item2{
+    position: relative;
+    left: 85px;
+    width: 85px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #43b1d2;
+}
+.tabs__item3{
+    position: relative;
+    left: 85px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #43b1d2;
+}
+.tabs__body{
+    border: 2px solid #e2e6e8;
+    width: 1440px;
+    margin: auto;
+    top: 55px;
+    z-index: 1;
+}
