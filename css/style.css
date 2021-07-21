@@ -54,12 +54,16 @@
     .container{
         max-width: 750px;
     }
+    .item1 {
+        flex-wrap: wrap;
+        width: 50%;
+    }
     .info_tel {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         align-items: flex-end;
     }
-
 }
 @media (max-width: 767px){
     .container{
@@ -67,6 +71,9 @@
     }
     .features{
         flex-wrap: wrap;
+    }
+    .info_tel{
+        background: none;
     }
 }
 body{
