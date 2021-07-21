@@ -1,0 +1,18 @@
+.icon{
+    width: 16px;
+    height: 16px;
+    float: left;
+    background: url("./icon.jpg");
+}
+.open .icon{
+    background-position-y: -16px;
+}
+.close .icon{
+    background-position-y: 0;
+}
+.leaf .icon{
+    background-position-y: -32px;
+}
+li{
+    list-style-type: none;
+}
