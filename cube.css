@@ -28,7 +28,8 @@
     border: 4px solid #fff;
 }
 .top{
-    background: linear-gradient(-45deg, rgba(240,149,187,1) 46%, rgba(240,149,187,0.3368697820925245) 100%);    transform: rotate(-45deg) skew(15deg, 15deg);
+    background: linear-gradient(-45deg, rgba(240,149,187,1) 46%, rgba(240,149,187,0.3368697820925245) 100%);
+    transform: rotate(-45deg) skew(15deg, 15deg);
 }
 .left{
     background: linear-gradient(-45deg, rgba(237,76,143,1) 46%, rgba(237,76,143,0) 100%);
