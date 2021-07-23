@@ -267,7 +267,14 @@ body{
     .features{
         flex-wrap: wrap;
     }
-
+    .item1, .item2, .item3, .item4{
+        width: 50%;
+    }
+    .item-column__text{
+        margin: auto;
+        width: 300px;
+        padding: 24px 30px 45px;
+    }
 }
 @media (max-width: 992px){
     .container{
@@ -277,22 +284,36 @@ body{
         flex-wrap: wrap;
         padding-top: 15px;
     }
-    .item1 {
+    .features {
         flex-wrap: wrap;
-        width: 50%;
+
     }
-    .info_tel {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: flex-end;
-        background-image: unset;
+    .item1, .item2, .item3, .item4{
+        width: 50%;
     }
     .logo__link{
         padding-top: 12px;
     }
     .menu__tel-link{
         padding-top: -15px;
+    }
+    .info_tel {
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         align-items: flex-end;
+         background-image: unset;
+     }
+    .info_tel__text1{
+        padding-top: 25px;
+        font-size: 20px;
+    }
+    .info_tel__text2{
+        padding-top: 20px;
+    }
+    .form-tel{
+        padding-top: 20px;
+        padding-bottom: 25px;
     }
 }
 @media (max-width: 767px){
@@ -307,10 +328,22 @@ body{
     }
 }
 @media (max-width: 480px) {
-    .menu__items{
-        flex-direction: row;
+    .logo__text{
+        font-size: 18px;
+        width: auto;
     }
+   .info_tel__text2{
+       font-size: 30px;
+       font-weight: 600;
+   }
+    .form-tel__input{
+        width: 150px;
 
+    }
+    .form-tel__button{
+        width: 90px;
+        padding: 7px 10px;
+    }
 }
 
 @media (max-width: 320px) {
