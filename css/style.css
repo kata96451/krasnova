@@ -63,9 +63,12 @@ body{
     text-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
 }
 .logo__img{
-    width: 80px;
-    height: 55px;
+    width: 94px;
+    height: auto;
     padding-right: 30px;
+}
+.logo__text{
+    width: 155px;
 }
 .menu {
     display: flex;
@@ -90,6 +93,9 @@ body{
     display: flex;
     justify-content: flex-end;
 }
+/*.menu__items li:nth-child(2):after{*/
+/*    background: url("../img/arrow-down.png");*/
+/*}*/
 .menu__item:hover {
     color: white;
 }
@@ -250,6 +256,14 @@ body{
         max-width: 970px;
         padding: 0 15px;
     }
+    .menu__items{
+        padding-top: 15px;
+        justify-content: flex-end;
+    }
+    .menu__item{
+        padding-top: 15px;
+        padding-left: 15px;
+    }
     .features{
         flex-wrap: wrap;
     }
@@ -261,6 +275,7 @@ body{
     }
     .menu__items{
         flex-wrap: wrap;
+        padding-top: 15px;
     }
     .item1 {
         flex-wrap: wrap;
@@ -273,6 +288,12 @@ body{
         align-items: flex-end;
         background-image: unset;
     }
+    .logo__link{
+        padding-top: 12px;
+    }
+    .menu__tel-link{
+        padding-top: -15px;
+    }
 }
 @media (max-width: 767px){
     .container{
@@ -284,4 +305,14 @@ body{
     .info_tel{
         background: none;
     }
+}
+@media (max-width: 480px) {
+    .menu__items{
+        flex-direction: row;
+    }
+
+}
+
+@media (max-width: 320px) {
+
 }
