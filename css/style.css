@@ -94,7 +94,14 @@ body{
     justify-content: flex-end;
 }
 /*.menu__items li:nth-child(2):after{*/
+/*    content: "";*/
+/*    display: block;*/
+/*    width: 13px;*/
+/*    height: 12px;*/
 /*    background: url("../img/arrow-down.png");*/
+/*}*/
+/*.menu__items li:nth-child(2):after:hover{*/
+/*    color: white;*/
 /*}*/
 .menu__item:hover {
     color: white;
@@ -248,7 +255,17 @@ body{
     top: 55px;
     z-index: 1;
 }
-
+.up_arrow__button{
+    height: 40px;
+    width: 40px;
+    border: 8px solid #AD103D;
+    border-right: none;
+    border-bottom: none;
+    transform: rotate(45deg);
+    position: fixed;
+    right: 200px;
+    bottom: 50px;
+}
 
 
 @media (max-width: 1440px){
@@ -274,6 +291,9 @@ body{
         margin: auto;
         width: 300px;
         padding: 24px 30px 45px;
+    }
+    .up_arrow__button{
+        right: 80px;
     }
 }
 @media (max-width: 992px){
@@ -327,6 +347,11 @@ body{
     }
     .tabs__item1, .tabs__item2, .tabs__item3{
         padding: 10px 0;
+    }
+    .up_arrow__button{
+        right: 30px;
+        width: 35px;
+        height: 35px;
     }
 }
 @media (max-width: 767px){
@@ -428,18 +453,29 @@ body{
     .tabs__item1{
         padding: 8px 5px 12px;
     }
+    .up_arrow__button{
+        right: 20px;
+        bottom: 30px;
+        width: 30px;
+        height: 30px;
+    }
 }
 
 @media (max-width: 320px) {
     .logo__link{
         width: 50%;
     }
+    .logo__img{
+        padding-right: 10px;
+        width: 50px;
+        height: auto;
+    }
     .logo__text{
         font-size: 12px;
     }
     .menu__tel-link{
         top: -15px;
-        left: 70%;
+        left: 65%;
         width: 50%;
         justify-content: flex-start;
     }
@@ -472,6 +508,7 @@ body{
     }
     .item-column__icon{
         padding-top: 22px;
+
     }
     .item-column__title{
         padding-top: 12px;
@@ -495,5 +532,14 @@ body{
     .tabs__item1{
         padding: 8px 5px 30px;
         width: 45px;
+    }
+    .up_arrow__button{
+        border: 6px solid #AD103D;
+        border-right: none;
+        border-bottom: none;
+        right: 20px;
+        bottom: 20px;
+        width: 25px;
+        height: 25px;
     }
 }
