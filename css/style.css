@@ -114,13 +114,6 @@ body{
     font-size: 20px;
     color: #494848;
 }
-.button_up{
-    width: 70px;
-    height: 70px;
-    position: fixed;
-    right: 40px;
-    bottom: 100px;
-}
 .section1{
     width: 100%;
     position: relative;
@@ -235,7 +228,6 @@ body{
 .tabs__items{
     display: flex;
     justify-content: flex-start;
-
     text-align: center;
     font-weight: bold;
     font-size: 24px;
@@ -272,19 +264,21 @@ body{
     border: 2px solid #e2e6e8;
     top: 55px;
     z-index: 1;
+
 }
 .cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 45px 15px 20px;
+
+}
+.cardbox{
+    padding: 15px;
+    width: 50%;
 }
 .card{
     border: 3px solid #43b1d2;
-    width: 682px;
-    height: 280px;
     padding: 20px;
-    margin-bottom: 35px;
 }
 .card__head{
     display: flex;
@@ -299,15 +293,14 @@ body{
     font-size: 30px;
     color: rgb(73, 72, 72);
     font-weight: bold;
-    line-height: 0.467;
     text-align: right;
     padding-top: 10px;
+    line-height: 1;
 }
 .card__subtitle{
     font-size: 16px;
     color: rgb(67, 177, 210);
     font-style: italic;
-    line-height: 0.875;
     text-align: right;
     padding-top: 20px;
     font-weight: normal;
@@ -329,13 +322,12 @@ body{
     color: rgb(73, 72, 72);
     font-weight: bold;
     line-height: 0.875;
-    padding-top: 15px;
 }
 .card__button{
     background-color: #37c3a8;
     color: #ffffff;
     font-size: 18px;
-    font-family: "Myriad Pro";
+    font-family: "Myriad Pro", serif;
     border: none;
     border-radius: 5px;
     width: 175px;
@@ -356,9 +348,11 @@ body{
 
 
 @media (max-width: 1440px){
+    body{
+        padding: 0 15px;
+    }
     .container{
         max-width: 970px;
-        padding: 0 15px;
     }
     .menu__items{
         padding-top: 15px;
@@ -380,7 +374,7 @@ body{
         padding: 24px 30px 45px;
     }
     .up_arrow__button{
-        right: 80px;
+        right: 50px;
     }
 }
 @media (max-width: 992px){
@@ -435,6 +429,17 @@ body{
     .tabs__item1, .tabs__item2, .tabs__item3{
         padding: 10px 0;
     }
+    .card{
+        padding: 15px;
+    }
+    .card__title{
+        font-size: 27px;
+        padding-top: 5px;
+    }
+    .card__subtitle{
+        font-size: 14px;
+        padding-top: 15px;
+    }
     .up_arrow__button{
         right: 30px;
         width: 35px;
@@ -481,6 +486,23 @@ body{
     }
     .item1, .item2, .item3, .item4{
         width: 50%;
+    }
+    .cardbox{
+        width: 80%;
+        margin: auto;
+    }
+    .card__title{
+        padding-top: 0;
+    }
+    .card__subtitle{
+        padding-top: 7px;
+    }
+    .card__text{
+        padding-top: 30px;
+    }
+    .card__button{
+        width: 150px;
+        height: 35px;
     }
 }
 @media (max-width: 480px) {
@@ -539,6 +561,22 @@ body{
     }
     .tabs__item1{
         padding: 8px 5px 12px;
+    }
+    .cardbox{
+        width: 100%;
+    }
+    .card__head{
+        flex-direction: column;
+    }
+    .card__text{
+        padding-top: 15px;
+    }
+    .card__tel-info {
+        padding-top: 10px;
+        flex-direction: column;
+    }
+    .card__tel{
+        padding-bottom: 10px;
     }
     .up_arrow__button{
         right: 20px;
