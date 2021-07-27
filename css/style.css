@@ -273,6 +273,75 @@ body{
     top: 55px;
     z-index: 1;
 }
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 45px 15px 20px;
+}
+.card{
+    border: 3px solid #43b1d2;
+    width: 682px;
+    height: 280px;
+    padding: 20px;
+    margin-bottom: 35px;
+}
+.card__head{
+    display: flex;
+    justify-content: space-between;
+}
+.card__icon{
+    display: inline-block;
+    width: 223px;
+    height: 78px;
+}
+.card__title{
+    font-size: 30px;
+    color: rgb(73, 72, 72);
+    font-weight: bold;
+    line-height: 0.467;
+    text-align: right;
+    padding-top: 10px;
+}
+.card__subtitle{
+    font-size: 16px;
+    color: rgb(67, 177, 210);
+    font-style: italic;
+    line-height: 0.875;
+    text-align: right;
+    padding-top: 20px;
+    font-weight: normal;
+}
+.card__text{
+    font-size: 16px;
+    color: rgb(73, 72, 72);
+    line-height: 0.875;
+    text-align: left;
+    padding-top: 30px;
+}
+.card__tel-info{
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.card__tel {
+    font-size: 16px;
+    color: rgb(73, 72, 72);
+    font-weight: bold;
+    line-height: 0.875;
+    padding-top: 15px;
+}
+.card__button{
+    background-color: #37c3a8;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Myriad Pro";
+    border: none;
+    border-radius: 5px;
+    width: 175px;
+    height: 45px;
+
+}
 .up_arrow__button{
     height: 40px;
     width: 40px;
