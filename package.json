@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css:compile": "gulp scss"
+    "css:compile": "gulp scss",
+    "css:watch": "gulp scss:watch"
   },
   "repository": {
     "type": "git",

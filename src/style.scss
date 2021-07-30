@@ -262,11 +262,11 @@ body{
   padding-bottom: 15px;
   color: $baseColor;
 }
-.tabs__body{
+.cards-container{
   border: 2px solid #e2e6e8;
   top: 55px;
   z-index: 1;
-
+  padding-top: 15px;
 }
 .cards{
   display: flex;
@@ -324,6 +324,7 @@ body{
   color: rgb(73, 72, 72);
   font-weight: bold;
   line-height: 0.875;
+  padding-top: 17px;
 }
 .card__button{
   background-color: #37c3a8;
@@ -334,7 +335,15 @@ body{
   border-radius: 5px;
   width: 175px;
   height: 45px;
-
+}
+.all-cabinets__button{
+  width: 125px;
+  height: 35px;
+  background-color: #cbd4e6;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: 30px auto 50px;
 }
 .up_arrow__button{
   height: 40px;
@@ -350,7 +359,7 @@ body{
 
 
 @media (max-width: 1440px){
-  body{
+  .container{
     padding: 0 15px;
   }
   .container{
@@ -442,6 +451,13 @@ body{
     font-size: 14px;
     padding-top: 15px;
   }
+  .card__tel{
+    padding-top: 10px;
+  }
+  .card__button{
+    width: 150px;
+    height: 45px;
+  }
   .up_arrow__button{
     right: 30px;
     width: 35px;
@@ -502,9 +518,15 @@ body{
   .card__text{
     padding-top: 30px;
   }
+  .card__tel{
+    padding-top: 15px;
+  }
   .card__button{
     width: 150px;
-    height: 35px;
+    height: 45px;
+  }
+  .all-cabinets__button{
+    margin: 15px auto 25px;
   }
 }
 @media (max-width: 480px) {
@@ -526,7 +548,7 @@ body{
   }
   .menu__tel-icon{
     width: 30px;
-    height: auto;
+
     padding-right: 10px;
   }
   .menu__item{
@@ -570,15 +592,26 @@ body{
   .card__head{
     flex-direction: column;
   }
+  .card__icon{
+    margin: 0 auto;
+    width: 100px;
+  }
+  .card__title, .card__subtitle{
+    text-align: center;
+  }
   .card__text{
     padding-top: 15px;
   }
   .card__tel-info {
     padding-top: 10px;
     flex-direction: column;
+    align-items: center;
   }
   .card__tel{
     padding: 10px 0;
+  }
+  .all-cabinets__button{
+    margin: 15px auto 30px;
   }
   .up_arrow__button{
     right: 20px;
@@ -587,7 +620,6 @@ body{
     height: 30px;
   }
 }
-
 @media (max-width: 320px) {
   .logo__link{
     width: 50%;
@@ -607,9 +639,7 @@ body{
     justify-content: flex-start;
   }
   .menu__tel-icon{
-    width: 20px;
-    height: 20px;
-    padding-right: 5px;
+    margin-right: 5px;
   }
   .menu__item {
     padding-top: 10px;
