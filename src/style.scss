@@ -192,21 +192,11 @@ body{
   justify-content: center;
 }
 .icon1{
-  width: 68px; height: 68px;
-  background: url('../img/css_sprites.png') -98px -10px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
 }
-.icon2{
-  width: 68px; height: 68px;
-  background: url('../img/css_sprites.png') -10px -98px;
-}
-.icon3{
-  width: 68px; height: 68px;
-  background: url('../img/css_sprites.png') -10px -10px;
-}
-.icon4{
-  width: 67px; height: 68px;
-  background: url('../img/css_sprites.png') -98px -98px;
-}
+
 .item-column__title {
   font-size: 27px;
   font-family: 'Myriad Pro', sans-serif;
