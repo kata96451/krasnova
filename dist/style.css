@@ -3,6 +3,54 @@
   padding: 0;
   box-sizing: border-box; }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto; }
+  @media (max-width: 1440px) {
+    .container {
+      padding: 0 15px;
+      max-width: 970px; } }
+  @media (max-width: 992px) {
+    .container {
+      max-width: 750px; } }
+  @media (max-width: 767px) {
+    .container {
+      max-width: none; } }
+
+body {
+  font-family: Calibri, sans-serif;
+  width: 100%; }
+
+@font-face {
+  font-family: Calibri;
+  src: url("../fonts/calibri.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: Calibri;
+  src: url("../fonts/calibri-bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: Calibri;
+  src: url("../fonts/calibri-italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/myriadpro-bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/myriadpro-regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal; }
+
 .header-box {
   background-color: #43b1d2;
   width: 100%; }
@@ -565,54 +613,6 @@
   @media (max-width: 480px) {
     .all-cabinets__button {
       margin: 15px auto 30px; } }
-
-@font-face {
-  font-family: Calibri;
-  src: url("../fonts/calibri.woff2") format("woff2");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: Calibri;
-  src: url("../fonts/calibri-bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: Calibri;
-  src: url("../fonts/calibri-italic.woff2") format("woff2");
-  font-style: italic;
-  font-weight: normal; }
-
-@font-face {
-  font-family: 'Myriad Pro';
-  src: url("../fonts/myriadpro-bold.woff2") format("woff2");
-  font-style: normal;
-  font-weight: bold; }
-
-@font-face {
-  font-family: 'Myriad Pro';
-  src: url("../fonts/myriadpro-regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: normal; }
-
-.container {
-  max-width: 1440px;
-  margin: 0 auto; }
-  @media (max-width: 1440px) {
-    .container {
-      padding: 0 15px;
-      max-width: 970px; } }
-  @media (max-width: 992px) {
-    .container {
-      max-width: 750px; } }
-  @media (max-width: 767px) {
-    .container {
-      max-width: none; } }
-
-body {
-  font-family: Calibri, sans-serif;
-  width: 100%; }
 
 .up_arrow__button {
   height: 40px;

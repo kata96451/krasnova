@@ -8,3 +8,21 @@ $font-family-2: 'Myriad Pro', sans-serif;
   padding: 0;
   box-sizing: border-box;
 }
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  @media (max-width: 1440px){
+    padding: 0 15px;
+    max-width: 970px;
+  }
+  @media (max-width: 992px){
+    max-width: 750px;
+  }
+  @media (max-width: 767px){
+    max-width: none;
+  }
+}
+body{
+  font-family: $font-family-1;
+  width: 100%;
+}
