@@ -13,11 +13,8 @@
   padding: 15px;
   width: 50%;
   @media (max-width: 767px){
-    width: 80%;
-    margin: auto;
-  }
-  @media (max-width: 480px){
     width: 100%;
+    margin: auto;
   }
 }
 .card{
