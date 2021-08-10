@@ -578,23 +578,24 @@ body {
     @media (max-width: 480px) {
       .card__tel {
         padding: 10px 0; } }
-  .card__button {
-    background-color: #37c3a8;
-    color: #ffffff;
-    font-size: 18px;
-    font-family: "Myriad Pro", sans-serif;
-    border: none;
-    border-radius: 5px;
-    width: 175px;
-    height: 45px; }
-    @media (max-width: 992px) {
-      .card__button {
-        width: 150px;
-        height: 45px; } }
-    @media (max-width: 767px) {
-      .card__button {
-        width: 150px;
-        height: 45px; } }
+
+.main-button {
+  background-color: #37c3a8;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Myriad Pro", sans-serif;
+  border: none;
+  border-radius: 5px;
+  width: 175px;
+  height: 45px; }
+  @media (max-width: 992px) {
+    .main-button {
+      width: 150px;
+      height: 45px; } }
+  @media (max-width: 767px) {
+    .main-button {
+      width: 150px;
+      height: 45px; } }
 
 .all-cabinets__button {
   width: 125px;
@@ -645,17 +646,18 @@ body {
       width: 25px;
       height: 25px; } }
 
-.section2 {
+.background {
   background-color: #e5e9f2; }
-  .section2 .section2-box {
-    display: flex;
-    justify-content: space-between; }
-    @media (max-width: 1440px) {
-      .section2 .section2-box {
-        flex-direction: column; } }
+
+.section2-box {
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 1440px) {
+    .section2-box {
+      flex-direction: column; } }
 
 .article-box {
-  width: 65%;
+  width: 62%;
   padding: 20px 0 40px 15px; }
   @media (max-width: 1440px) {
     .article-box {
@@ -695,6 +697,9 @@ body {
     @media (max-width: 767px) {
       .article-box .article-box__article {
         padding: 0; } }
+  .article-box .article-box__footer {
+    display: flex;
+    justify-content: space-between; }
 
 .feedback {
   width: 35%;
@@ -717,6 +722,86 @@ body {
   .feedback .feedback__quote {
     font-size: 16px;
     color: #494848;
-    padding-bottom: 20px; }
+    padding-bottom: 35px; }
     .feedback .feedback__quote p {
       padding-bottom: 13px; }
+
+.feedback__footer {
+  display: flex;
+  justify-content: flex-end; }
+
+.buttons-arrow {
+  display: flex;
+  width: 135px;
+  padding: 0 15px;
+  justify-content: space-between; }
+  .buttons-arrow .button-arrow {
+    display: inline-block;
+    width: 45px;
+    height: 35px;
+    border: none;
+    border-radius: 3px; }
+
+.section3 {
+  background-color: #43b1d2; }
+  .section3 .section3-box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 45px; }
+    @media (max-width: 992px) {
+      .section3 .section3-box {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0; } }
+
+.form-tel2 {
+  padding: 35px 10px 0 0;
+  display: flex; }
+  @media (max-width: 992px) {
+    .form-tel2 {
+      padding-top: 30px;
+      padding-bottom: 35px; } }
+  .form-tel2__label {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1px; }
+    @media (max-width: 767px) {
+      .form-tel2__label {
+        font-size: 20px; } }
+    @media (max-width: 480px) {
+      .form-tel2__label {
+        font-size: 18px; } }
+  .form-tel2__input {
+    padding-left: 12px;
+    color: #6c757d;
+    font-size: 14px;
+    border: 1px solid #ced4da;
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+    width: 225px;
+    height: 35px; }
+    @media (max-width: 767px) {
+      .form-tel2__input {
+        width: 150px; } }
+    @media (max-width: 320px) {
+      .form-tel2__input {
+        width: 80%; } }
+  .form-tel2__button {
+    color: #6c757d;
+    background-color: #cbd4e6;
+    border: 1px solid #6c757d;
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 105px;
+    height: 35px;
+    border-radius: 0 5px 5px 0; }
+    @media (max-width: 480px) {
+      .form-tel2__button {
+        width: 90px;
+        padding: 7px 10px; } }
+    @media (max-width: 320px) {
+      .form-tel2__button {
+        width: 40%;
+        padding: 7px 0; } }
