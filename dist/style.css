@@ -762,6 +762,10 @@ body {
     .form-tel2 {
       padding-top: 30px;
       padding-bottom: 35px; } }
+  @media (max-width: 480px) {
+    .form-tel2 {
+      display: flex;
+      flex-wrap: wrap; } }
   .form-tel2__label {
     color: #ffffff;
     font-weight: bold;
@@ -773,6 +777,8 @@ body {
     @media (max-width: 480px) {
       .form-tel2__label {
         font-size: 18px; } }
+  .form-tel2__form {
+    display: flex; }
   .form-tel2__input {
     padding-left: 12px;
     color: #6c757d;
