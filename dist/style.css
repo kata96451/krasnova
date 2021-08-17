@@ -757,7 +757,8 @@ body {
 
 .form-tel2 {
   padding: 35px 10px 0 0;
-  display: flex; }
+  display: flex;
+  justify-content: center; }
   @media (max-width: 992px) {
     .form-tel2 {
       padding-top: 30px;
@@ -811,3 +812,19 @@ body {
       .form-tel2__button {
         width: 40%;
         padding: 7px 0; } }
+
+.contacts-bg {
+  background-color: #e5e9f2; }
+  .contacts-bg .contacts {
+    display: flex;
+    justify-content: space-around; }
+
+.contacts__enquiry-form {
+  display: flex; }
+  .contacts__enquiry-form contacts__ef-form p {
+    border-bottom: #909398; }
+  .contacts__enquiry-form input {
+    border: none;
+    background-color: #e5e9f2; }
+    .contacts__enquiry-form input:focus {
+      outline: none; }
