@@ -815,16 +815,48 @@ body {
 
 .contacts-bg {
   background-color: #e5e9f2; }
-  .contacts-bg .contacts {
-    display: flex;
-    justify-content: space-around; }
+  .contacts-bg .contacts-box {
+    padding: 115px 0 105px; }
+    .contacts-bg .contacts-box .contacts {
+      display: flex;
+      justify-content: space-around; }
 
-.contacts__enquiry-form {
+.contacts--h3-form {
+  padding-bottom: 65px; }
+
+.contacts--items-text {
+  font-size: 16px;
+  font-family: "Myriad Pro", sans-serif;
+  color: #909398;
+  list-style-type: none; }
+  .contacts--items-text li {
+    padding-bottom: 25px;
+    padding-left: 40px;
+    background: url("../img/triangle.svg") 15px 3px no-repeat; }
+
+.contacts__get-in-touch .contacts__git-list .contacts__git-items {
+  padding-bottom: 55px;
+  font-size: 17px;
+  font-family: "Myriad Pro", sans-serif;
+  color: #909398;
+  list-style-type: none; }
+  .contacts__get-in-touch .contacts__git-list .contacts__git-items ul {
+    list-style-type: none; }
+  .contacts__get-in-touch .contacts__git-list .contacts__git-items .contacts--mail {
+    font-size: 16px; }
+
+.contacts__enquiry-form .contacts__ef-form p {
   display: flex; }
-  .contacts__enquiry-form contacts__ef-form p {
-    border-bottom: #909398; }
-  .contacts__enquiry-form input {
-    border: none;
-    background-color: #e5e9f2; }
-    .contacts__enquiry-form input:focus {
-      outline: none; }
+  .contacts__enquiry-form .contacts__ef-form p:not(:first-child) {
+    padding-top: 25px; }
+  .contacts__enquiry-form .contacts__ef-form p:not(:last-child) {
+    border-bottom: 1px solid #d6d9de; }
+  .contacts__enquiry-form .contacts__ef-form p:nth-child(3) {
+    padding-bottom: 60px; }
+
+.contacts__enquiry-form input {
+  border: none;
+  background-color: #e5e9f2;
+  padding-bottom: 20px; }
+  .contacts__enquiry-form input:focus {
+    outline: none; }
