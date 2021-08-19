@@ -834,16 +834,41 @@ body {
     padding-left: 40px;
     background: url("../img/triangle.svg") 15px 3px no-repeat; }
 
-.contacts__get-in-touch .contacts__git-list .contacts__git-items {
-  padding-bottom: 55px;
-  font-size: 17px;
-  font-family: "Myriad Pro", sans-serif;
-  color: #909398;
-  list-style-type: none; }
-  .contacts__get-in-touch .contacts__git-list .contacts__git-items ul {
+.contacts__get-in-touch {
+  width: 25%; }
+  .contacts__get-in-touch .contacts__git-list .contacts__git-items {
+    padding-bottom: 55px;
+    font-size: 17px;
+    font-family: "Myriad Pro", sans-serif;
+    color: #909398;
     list-style-type: none; }
-  .contacts__get-in-touch .contacts__git-list .contacts__git-items .contacts--mail {
-    font-size: 16px; }
+    .contacts__get-in-touch .contacts__git-list .contacts__git-items ul {
+      list-style-type: none; }
+      .contacts__get-in-touch .contacts__git-list .contacts__git-items ul li {
+        padding-bottom: 8px; }
+    .contacts__get-in-touch .contacts__git-list .contacts__git-items .contacts--mail {
+      font-size: 16px;
+      background: url("../img/icon-letter.svg") no-repeat;
+      width: 80%; }
+      .contacts__get-in-touch .contacts__git-list .contacts__git-items .contacts--mail li {
+        padding-left: 80px; }
+    .contacts__get-in-touch .contacts__git-list .contacts__git-items .contacts--tel {
+      background: url("../img/icon-smartphone.svg") no-repeat;
+      width: 80%; }
+      .contacts__get-in-touch .contacts__git-list .contacts__git-items .contacts--tel li {
+        padding-left: 75px; }
+    .contacts__get-in-touch .contacts__git-list .contacts__git-items .contacts--pin {
+      background: url("../img/icon-pin.svg") no-repeat;
+      padding-left: 85px;
+      width: 80%;
+      height: 50px;
+      display: block; }
+
+.contacts__quick-links {
+  width: 20%; }
+
+.contacts__our-services {
+  width: 25%; }
 
 .contacts__enquiry-form .contacts__ef-form p {
   display: flex; }
@@ -854,9 +879,21 @@ body {
   .contacts__enquiry-form .contacts__ef-form p:nth-child(3) {
     padding-bottom: 60px; }
 
-.contacts__enquiry-form input {
+.contacts__enquiry-form .contacts__ef-form input {
   border: none;
   background-color: #e5e9f2;
   padding-bottom: 20px; }
-  .contacts__enquiry-form input:focus {
+  .contacts__enquiry-form .contacts__ef-form input:focus {
     outline: none; }
+
+.contacts__enquiry-form .contacts__ef-form .contacts__button {
+  width: 125px;
+  height: 35px;
+  color: #fff;
+  background-color: #0087be;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  box-shadow: -3.508px 11.476px 40px 0px rgba(0, 1, 1, 0.2);
+  border-radius: 50px;
+  border: none; }

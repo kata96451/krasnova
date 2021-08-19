@@ -229,7 +229,8 @@
     background: url("../img/triangle.svg") 15px 3px no-repeat;
   }
 }
-.contacts__get-in-touch{
+.contacts__get-in-touch{    width: 25%;
+
   .contacts__git-list{
 
     .contacts__git-items{
@@ -240,12 +241,42 @@
       list-style-type: none;
       ul{
         list-style-type: none;
+        li{
+          padding-bottom: 8px;
+        }
+
       }
       .contacts--mail{
         font-size: 16px;
+        background: url("../img/icon-letter.svg") no-repeat;
+        width: 80%;
+        li{
+          padding-left: 80px;
+        }
+      }
+      .contacts--tel{
+        background: url("../img/icon-smartphone.svg") no-repeat;
+        width: 80%;
+        li{
+          padding-left: 75px;
+        }
+      }
+      .contacts--pin{
+        background: url("../img/icon-pin.svg") no-repeat;
+        padding-left: 85px;
+        width: 80%;
+        height: 50px;
+        display: block;
       }
     }
   }
+}
+.contacts__quick-links{
+  width: 20%;
+}
+.contacts__our-services{
+  width: 25%;
+
 }
 .contacts__enquiry-form{
 
@@ -263,16 +294,28 @@
 
        }
     }
+     & input{
+       border: none;
+       background-color: $background;
+       padding-bottom: 20px;
+       &:focus{
+         outline:none;
+       }
+     }
+     .contacts__button{
+       width: 125px;
+       height: 35px;
+       color: #fff;
+       background-color: #0087be;
+       text-transform: uppercase;
+       font-size: 16px;
+       letter-spacing: 1px;
+       box-shadow: -3.508px 11.476px 40px 0px rgba(0, 1, 1, 0.2);
+       border-radius: 50px;
+       border: none;
+     }
   }
-  & input{
-    border: none;
-    background-color: $background;
-    padding-bottom: 20px;
-    &:focus{
-      outline:none;
-    }
 
-  }
 }
 
 
