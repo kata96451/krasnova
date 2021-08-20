@@ -133,18 +133,21 @@
     height: 45px;
   }
 }
-.all-cabinets__button{
-  width: 125px;
-  height: 35px;
-  background-color: #cbd4e6;
-  border: none;
-  border-radius: 5px;
-  display: block;
-  margin: 30px auto 50px;
+.all-cabinets{
+  margin: 35px auto 50px;
   @media (max-width: 767px){
-    margin: 15px auto 25px;
+    margin-top: 15px;
+    margin-bottom: 25px;
   }
   @media (max-width: 480px){
-    margin: 15px auto 30px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  .all-cabinets__button{
+    width: 125px;
+    height: 35px;
+    background-color: #cbd4e6;
+    border: none;
+    border-radius: 5px;
   }
 }

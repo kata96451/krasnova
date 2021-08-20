@@ -111,6 +111,12 @@
     padding-top: 23px;
     display: flex;
     justify-content: flex-end;
+    .menu__item:nth-child(2):after{
+      content: " \1F873";
+      font-size: 12px;
+      position: relative;
+      top: 1px;
+    }
     @media (max-width: 1440px){
       padding-top: 0;
       justify-content: flex-end;
