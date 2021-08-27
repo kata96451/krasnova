@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="dist/style.css">
     <script src="js/script.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body id="top">
 <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
@@ -192,11 +193,17 @@
         </div>
     </div>
     <div class="tabs">
-        <div class="tabs__items container">
-            <div class="tabs__item1">МРТ</div>
-            <div class="tabs__item2">КТ</div>
-            <div class="tabs__item3">РЕНТГЕН ИССЛЕДОВАНИЯ</div>
-        </div>
+        <ul class="nav nav-tabs container">
+            <li class=" nav-item">
+                <a href="#tab1"  class="nav-link active" aria-current="page">МРТ</a>
+            </li>
+            <li class="nav-item">
+                <a href="#tab2">КТ</a>
+            </li>
+            <li class=" nav-item">
+                <a href="#tab3">РЕНТГЕН ИССЛЕДОВАНИЯ</a>
+            </li>
+        </ul>
         <div class="tabs__body container">
             <div class="cards-container">
                 <div class="cards">
@@ -445,9 +452,7 @@
                     <input id="form-tel" type="tel" name="user-tel" placeholder="+380" class="form-tel2__input">
                     <button type="submit" class="form-tel2__button">Отправить</button>
                 </div>
-
             </form>
-
         </div>
     </div>
 </main>
