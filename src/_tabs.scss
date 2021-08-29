@@ -1,5 +1,8 @@
 .tabs-style{
   font-weight: bold;
+@media (max-width: 480px){
+  font-size: 13px;
+}
 }
 //.tabs{
 //  &__items{

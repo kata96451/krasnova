@@ -195,27 +195,27 @@
     <div class="tabs container">
         <ul class="nav nav-tabs">
             <li class="nav-item tabs-style">
-                <a href="#tab1"  class="nav-link active" aria-current="page">МРТ</a>
+                <a href="#tab1"  class="nav-link active" data-toggle="tab">МРТ</a>
             </li>
             <li class="nav-item tabs-style">
-                <a href="#tab2" class="nav-link">КТ</a>
+                <a href="#tab2" class="nav-link" data-toggle="tab">КТ</a>
             </li>
             <li class=" nav-item tabs-style">
-                <a href="#tab3" class="nav-link">РЕНТГЕН ИССЛЕДОВАНИЯ</a>
+                <a href="#tab3" class="nav-link" data-toggle="tab">РЕНТГЕН ИССЛЕДОВАНИЯ</a>
             </li>
         </ul>
-        <div class="tabs__body">
-            <div class="cards-container">
-                <div class="cards">
-                    <div class="cardbox">
-                        <div class="card" itemscope itemtype="https://schema.org/Organization">
-                            <div class="card__head">
+        <div class="tabs__body tab-content">
+            <div class="cards-container"  id="tab1">
+                <div class="clinic-cards row row-cols-1 row row-cols-sm-2" >
+                    <div class="cardbox col">
+                        <div class="clinic-card" itemscope itemtype="https://schema.org/Organization">
+                            <div class="clinic-card__head">
                                 <svg class="card__icon">
                                     <use xlink:href="#clinic-icon"></use>
                                 </svg>
                                 <div>
-                                    <h2 class="card__title" itemprop="name">Название клиники</h2>
-                                    <h6 class="card__subtitle" itemprop="address" itemscope
+                                    <h2 class="clinic-card__title" itemprop="name">Название клиники</h2>
+                                    <h6 class="clinic-card__subtitle" itemprop="address" itemscope
                                         itemtype="https://schema.org/PostalAddress">
                                         Ленинский проспект, д. 160, Ленинский проспект
                                         <meta itemprop="postalCode" content="45000">
@@ -223,12 +223,12 @@
                                     </h6>
                                 </div>
                             </div>
-                            <p class="card__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                            <p class="clinic-card__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
                                 дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
                                 как контент впоследствии будет выглядеть на готовой странице, чтобы
                                 увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
-                            <div class="card__tel-info">
-                                <p class="card__tel">Наш номер: +3856&nbsp0&nbsp99&nbsp66&nbsp65
+                            <div class="clinic-card__tel-info">
+                                <p class="clinic-card__tel">Наш номер: +3856&nbsp0&nbsp99&nbsp66&nbsp65
                                     <meta itemprop="telephone" content="+380560996665">
                                 </p>
                                 <div>
@@ -237,15 +237,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cardbox">
-                        <div class="card" itemscope itemtype="https://schema.org/Organization">
-                            <div class="card__head">
+                    <div class="cardbox col">
+                        <div class="clinic-card" itemscope itemtype="https://schema.org/Organization">
+                            <div class="clinic-card__head">
                                 <svg class="card__icon">
                                     <use xlink:href="#clinic-icon"></use>
                                 </svg>
                                 <div>
-                                    <h2 class="card__title" itemprop="name">Название клиники</h2>
-                                    <h6 class="card__subtitle" itemprop="address" itemscope
+                                    <h2 class="clinic-card__title" itemprop="name">Название клиники</h2>
+                                    <h6 class="clinic-card__subtitle" itemprop="address" itemscope
                                         itemtype="https://schema.org/PostalAddress">
                                         Ленинский проспект, д. 160, Ленинский проспект
                                         <meta itemprop="postalCode" content="45000">
@@ -253,12 +253,12 @@
                                     </h6>
                                 </div>
                             </div>
-                            <p class="card__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                            <p class="clinic-card__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
                                 дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
                                 как контент впоследствии будет выглядеть на готовой странице, чтобы
                                 увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
-                            <div class="card__tel-info">
-                                <p class="card__tel">Наш номер: +3856&nbsp0&nbsp99&nbsp66&nbsp65
+                            <div class="clinic-card__tel-info">
+                                <p class="clinic-card__tel">Наш номер: +3856&nbsp0&nbsp99&nbsp66&nbsp65
                                     <meta itemprop="telephone" content="+380560996665">
                                 </p>
                                 <div>
@@ -267,15 +267,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cardbox">
-                        <div class="card" itemscope itemtype="https://schema.org/Organization">
-                            <div class="card__head">
+                    <div class="cardbox col">
+                        <div class="clinic-card" itemscope itemtype="https://schema.org/Organization">
+                            <div class="clinic-card__head">
                                 <svg class="card__icon">
                                     <use xlink:href="#clinic-icon"></use>
                                 </svg>
                                 <div>
-                                    <h3 class="card__title" itemprop="name">Название клиники</h3>
-                                    <h6 class="card__subtitle" itemprop="address" itemscope
+                                    <h2 class="clinic-card__title" itemprop="name">Название клиники</h2>
+                                    <h6 class="clinic-card__subtitle" itemprop="address" itemscope
                                         itemtype="https://schema.org/PostalAddress">
                                         Ленинский проспект, д. 160, Ленинский проспект
                                         <meta itemprop="postalCode" content="45000">
@@ -283,43 +283,12 @@
                                     </h6>
                                 </div>
                             </div>
-                            <p class="card__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                            <p class="clinic-card__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
                                 дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
                                 как контент впоследствии будет выглядеть на готовой странице, чтобы
                                 увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
-                            <div class="card__tel-info">
-                                <p class="card__tel">Наш номер: +3856&nbsp0&nbsp99&nbsp66&nbsp65
-                                    <meta itemprop="telephone" content="+380560996665">
-                                </p>
-                                <div>
-                                    <button type="button" class="main-button">Заказать звонок</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="cardbox">
-                        <div class="card" itemscope itemtype="https://schema.org/Organization">
-                            <div class="card__head">
-                                <svg class="card__icon">
-                                    <use xlink:href="#clinic-icon"></use>
-                                </svg>
-                                <div>
-                                    <h3 class="card__title" itemprop="name">Название клиники</h3>
-                                    <h6 class="card__subtitle" itemprop="address" itemscope
-                                        itemtype="https://schema.org/PostalAddress">
-                                        Ленинский проспект, д. 160, Ленинский проспект
-                                        <meta itemprop="postalCode" content="45000">
-                                        <meta itemprop="addressLocality" content="Украина">
-                                    </h6>
-                                </div>
-                            </div>
-                            <p class="card__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
-                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
-                                как контент впоследствии будет выглядеть на готовой странице, чтобы
-                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
-                            <div class="card__tel-info">
-                                <p class="card__tel">Наш номер: +3856&nbsp0&nbsp99&nbsp66&nbsp65
+                            <div class="clinic-card__tel-info">
+                                <p class="clinic-card__tel">Наш номер: +3856&nbsp0&nbsp99&nbsp66&nbsp65
                                     <meta itemprop="telephone" content="+380560996665">
                                 </p>
                                 <div>
@@ -328,15 +297,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cardbox">
-                        <div class="card" itemscope itemtype="https://schema.org/Organization">
-                            <div class="card__head">
+                    <div class="cardbox col">
+                        <div class="clinic-card" itemscope itemtype="https://schema.org/Organization">
+                            <div class="clinic-card__head">
                                 <svg class="card__icon">
                                     <use xlink:href="#clinic-icon"></use>
                                 </svg>
                                 <div>
-                                    <h3 class="card__title" itemprop="name">Название клиники</h3>
-                                    <h6 class="card__subtitle" itemprop="address" itemscope
+                                    <h2 class="clinic-card__title" itemprop="name">Название клиники</h2>
+                                    <h6 class="clinic-card__subtitle" itemprop="address" itemscope
                                         itemtype="https://schema.org/PostalAddress">
                                         Ленинский проспект, д. 160, Ленинский проспект
                                         <meta itemprop="postalCode" content="45000">
@@ -344,12 +313,12 @@
                                     </h6>
                                 </div>
                             </div>
-                            <p class="card__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                            <p class="clinic-card__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
                                 дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
                                 как контент впоследствии будет выглядеть на готовой странице, чтобы
                                 увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
-                            <div class="card__tel-info">
-                                <p class="card__tel">Наш номер: +3856&nbsp0&nbsp99&nbsp66&nbsp65
+                            <div class="clinic-card__tel-info">
+                                <p class="clinic-card__tel">Наш номер: +3856&nbsp0&nbsp99&nbsp66&nbsp65
                                     <meta itemprop="telephone" content="+380560996665">
                                 </p>
                                 <div>
@@ -358,15 +327,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cardbox">
-                        <div class="card" itemscope itemtype="https://schema.org/Organization">
-                            <div class="card__head">
+                    <div class="cardbox col">
+                        <div class="clinic-card" itemscope itemtype="https://schema.org/Organization">
+                            <div class="clinic-card__head">
                                 <svg class="card__icon">
                                     <use xlink:href="#clinic-icon"></use>
                                 </svg>
                                 <div>
-                                    <h3 class="card__title" itemprop="name">Название клиники</h3>
-                                    <h6 class="card__subtitle" itemprop="address" itemscope
+                                    <h2 class="clinic-card__title" itemprop="name">Название клиники</h2>
+                                    <h6 class="clinic-card__subtitle" itemprop="address" itemscope
                                         itemtype="https://schema.org/PostalAddress">
                                         Ленинский проспект, д. 160, Ленинский проспект
                                         <meta itemprop="postalCode" content="45000">
@@ -374,12 +343,12 @@
                                     </h6>
                                 </div>
                             </div>
-                            <p class="card__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                            <p class="clinic-card__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
                                 дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
                                 как контент впоследствии будет выглядеть на готовой странице, чтобы
                                 увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
-                            <div class="card__tel-info">
-                                <p class="card__tel">Наш номер: +3856&nbsp0&nbsp99&nbsp66&nbsp65
+                            <div class="clinic-card__tel-info">
+                                <p class="clinic-card__tel">Наш номер: +3856&nbsp0&nbsp99&nbsp66&nbsp65
                                     <meta itemprop="telephone" content="+380560996665">
                                 </p>
                                 <div>
@@ -388,18 +357,272 @@
                             </div>
                         </div>
                     </div>
-                    <div class="all-cabinets">
-                        <button type="button" class="all-cabinets__button">Все кабинеты</button>
+                    <div class="cardbox col">
+                        <div class="clinic-card" itemscope itemtype="https://schema.org/Organization">
+                            <div class="clinic-card__head">
+                                <svg class="card__icon">
+                                    <use xlink:href="#clinic-icon"></use>
+                                </svg>
+                                <div>
+                                    <h2 class="clinic-card__title" itemprop="name">Название клиники</h2>
+                                    <h6 class="clinic-card__subtitle" itemprop="address" itemscope
+                                        itemtype="https://schema.org/PostalAddress">
+                                        Ленинский проспект, д. 160, Ленинский проспект
+                                        <meta itemprop="postalCode" content="45000">
+                                        <meta itemprop="addressLocality" content="Украина">
+                                    </h6>
+                                </div>
+                            </div>
+                            <p class="clinic-card__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                            <div class="clinic-card__tel-info">
+                                <p class="clinic-card__tel">Наш номер: +3856&nbsp0&nbsp99&nbsp66&nbsp65
+                                    <meta itemprop="telephone" content="+380560996665">
+                                </p>
+                                <div>
+                                    <button type="button" class="main-button">Заказать звонок</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="all-cabinets">
+                    <button type="button" class="all-cabinets__button">Все кабинеты</button>
+                </div>
+            </div>
+            <div class="cards-container"  id="tab2">
+                <div class="clinic-cards row row-cols-1 row row-cols-sm-2" >
+                    <div class="cardbox col">
+                        <div class="clinic-card" itemscope itemtype="https://schema.org/Organization">
+                            <div class="clinic-card__head">
+                                <svg class="card__icon">
+                                    <use xlink:href="#clinic-icon"></use>
+                                </svg>
+                                <div>
+                                    <h2 class="clinic-card__title" itemprop="name">Название клиники</h2>
+                                    <h6 class="clinic-card__subtitle" itemprop="address" itemscope
+                                        itemtype="https://schema.org/PostalAddress">
+                                        Ленинский проспект, д. 160, Ленинский проспект
+                                        <meta itemprop="postalCode" content="45000">
+                                        <meta itemprop="addressLocality" content="Украина">
+                                    </h6>
+                                </div>
+                            </div>
+                            <p class="clinic-card__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                            <div class="clinic-card__tel-info">
+                                <p class="clinic-card__tel">Наш номер: +3856&nbsp0&nbsp99&nbsp66&nbsp65
+                                    <meta itemprop="telephone" content="+380560996665">
+                                </p>
+                                <div>
+                                    <button type="button" class="main-button">Заказать звонок</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardbox col">
+                        <div class="clinic-card" itemscope itemtype="https://schema.org/Organization">
+                            <div class="clinic-card__head">
+                                <svg class="card__icon">
+                                    <use xlink:href="#clinic-icon"></use>
+                                </svg>
+                                <div>
+                                    <h2 class="clinic-card__title" itemprop="name">Название клиники</h2>
+                                    <h6 class="clinic-card__subtitle" itemprop="address" itemscope
+                                        itemtype="https://schema.org/PostalAddress">
+                                        Ленинский проспект, д. 160, Ленинский проспект
+                                        <meta itemprop="postalCode" content="45000">
+                                        <meta itemprop="addressLocality" content="Украина">
+                                    </h6>
+                                </div>
+                            </div>
+                            <p class="clinic-card__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                            <div class="clinic-card__tel-info">
+                                <p class="clinic-card__tel">Наш номер: +3856&nbsp0&nbsp99&nbsp66&nbsp65
+                                    <meta itemprop="telephone" content="+380560996665">
+                                </p>
+                                <div>
+                                    <button type="button" class="main-button">Заказать звонок</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardbox col">
+                        <div class="clinic-card" itemscope itemtype="https://schema.org/Organization">
+                            <div class="clinic-card__head">
+                                <svg class="card__icon">
+                                    <use xlink:href="#clinic-icon"></use>
+                                </svg>
+                                <div>
+                                    <h2 class="clinic-card__title" itemprop="name">Название клиники</h2>
+                                    <h6 class="clinic-card__subtitle" itemprop="address" itemscope
+                                        itemtype="https://schema.org/PostalAddress">
+                                        Ленинский проспект, д. 160, Ленинский проспект
+                                        <meta itemprop="postalCode" content="45000">
+                                        <meta itemprop="addressLocality" content="Украина">
+                                    </h6>
+                                </div>
+                            </div>
+                            <p class="clinic-card__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                            <div class="clinic-card__tel-info">
+                                <p class="clinic-card__tel">Наш номер: +3856&nbsp0&nbsp99&nbsp66&nbsp65
+                                    <meta itemprop="telephone" content="+380560996665">
+                                </p>
+                                <div>
+                                    <button type="button" class="main-button">Заказать звонок</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-cabinets">
+                    <button type="button" class="all-cabinets__button">Все кабинеты</button>
+                </div>
+            </div>
+            <div class="cards-container"  id="tab3">
+                <div class="clinic-cards row row-cols-1 row row-cols-sm-2" >
+                    <div class="cardbox col">
+                        <div class="clinic-card" itemscope itemtype="https://schema.org/Organization">
+                            <div class="clinic-card__head">
+                                <svg class="card__icon">
+                                    <use xlink:href="#clinic-icon"></use>
+                                </svg>
+                                <div>
+                                    <h2 class="clinic-card__title" itemprop="name">Название клиники</h2>
+                                    <h6 class="clinic-card__subtitle" itemprop="address" itemscope
+                                        itemtype="https://schema.org/PostalAddress">
+                                        Ленинский проспект, д. 160, Ленинский проспект
+                                        <meta itemprop="postalCode" content="45000">
+                                        <meta itemprop="addressLocality" content="Украина">
+                                    </h6>
+                                </div>
+                            </div>
+                            <p class="clinic-card__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                            <div class="clinic-card__tel-info">
+                                <p class="clinic-card__tel">Наш номер: +3856&nbsp0&nbsp99&nbsp66&nbsp65
+                                    <meta itemprop="telephone" content="+380560996665">
+                                </p>
+                                <div>
+                                    <button type="button" class="main-button">Заказать звонок</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardbox col">
+                        <div class="clinic-card" itemscope itemtype="https://schema.org/Organization">
+                            <div class="clinic-card__head">
+                                <svg class="card__icon">
+                                    <use xlink:href="#clinic-icon"></use>
+                                </svg>
+                                <div>
+                                    <h2 class="clinic-card__title" itemprop="name">Название клиники</h2>
+                                    <h6 class="clinic-card__subtitle" itemprop="address" itemscope
+                                        itemtype="https://schema.org/PostalAddress">
+                                        Ленинский проспект, д. 160, Ленинский проспект
+                                        <meta itemprop="postalCode" content="45000">
+                                        <meta itemprop="addressLocality" content="Украина">
+                                    </h6>
+                                </div>
+                            </div>
+                            <p class="clinic-card__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                            <div class="clinic-card__tel-info">
+                                <p class="clinic-card__tel">Наш номер: +3856&nbsp0&nbsp99&nbsp66&nbsp65
+                                    <meta itemprop="telephone" content="+380560996665">
+                                </p>
+                                <div>
+                                    <button type="button" class="main-button">Заказать звонок</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardbox col">
+                        <div class="clinic-card" itemscope itemtype="https://schema.org/Organization">
+                            <div class="clinic-card__head">
+                                <svg class="card__icon">
+                                    <use xlink:href="#clinic-icon"></use>
+                                </svg>
+                                <div>
+                                    <h2 class="clinic-card__title" itemprop="name">Название клиники</h2>
+                                    <h6 class="clinic-card__subtitle" itemprop="address" itemscope
+                                        itemtype="https://schema.org/PostalAddress">
+                                        Ленинский проспект, д. 160, Ленинский проспект
+                                        <meta itemprop="postalCode" content="45000">
+                                        <meta itemprop="addressLocality" content="Украина">
+                                    </h6>
+                                </div>
+                            </div>
+                            <p class="clinic-card__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                            <div class="clinic-card__tel-info">
+                                <p class="clinic-card__tel">Наш номер: +3856&nbsp0&nbsp99&nbsp66&nbsp65
+                                    <meta itemprop="telephone" content="+380560996665">
+                                </p>
+                                <div>
+                                    <button type="button" class="main-button">Заказать звонок</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardbox col">
+                        <div class="clinic-card" itemscope itemtype="https://schema.org/Organization">
+                            <div class="clinic-card__head">
+                                <svg class="card__icon">
+                                    <use xlink:href="#clinic-icon"></use>
+                                </svg>
+                                <div>
+                                    <h2 class="clinic-card__title" itemprop="name">Название клиники</h2>
+                                    <h6 class="clinic-card__subtitle" itemprop="address" itemscope
+                                        itemtype="https://schema.org/PostalAddress">
+                                        Ленинский проспект, д. 160, Ленинский проспект
+                                        <meta itemprop="postalCode" content="45000">
+                                        <meta itemprop="addressLocality" content="Украина">
+                                    </h6>
+                                </div>
+                            </div>
+                            <p class="clinic-card__text">Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                            <div class="clinic-card__tel-info">
+                                <p class="clinic-card__tel">Наш номер: +3856&nbsp0&nbsp99&nbsp66&nbsp65
+                                    <meta itemprop="telephone" content="+380560996665">
+                                </p>
+                                <div>
+                                    <button type="button" class="main-button">Заказать звонок</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-cabinets">
+                    <button type="button" class="all-cabinets__button">Все кабинеты</button>
                 </div>
             </div>
         </div>
-        <div class="up_arrow">
-            <a href="#top">
-                <div class="up_arrow__button"></div>
-            </a>
+            <div class="up_arrow">
+                <a href="#top">
+                    <div class="up_arrow__button"></div>
+                </a>
+            </div>
         </div>
-    </div>
     <div class="section2">
         <div class="section2-box container">
             <div class="article-box">
