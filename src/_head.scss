@@ -91,9 +91,9 @@
     }
     @media (max-width: 320px){
       top: -15px;
-      left: 65%;
+      left: 130px;
       width: 50%;
-      justify-content: flex-start;
+      justify-content: flex-end;
     }
   }
   &__tel-icon {
@@ -101,7 +101,7 @@
     width: 25px; height: 25px;
     @media (max-width: 480px){
       width: 30px;
-      padding-right: 10px;
+      margin-right: 7px;
     }
     @media (max-width: 320px){
       margin-right: 5px;
