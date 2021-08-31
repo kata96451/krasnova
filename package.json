@@ -30,5 +30,8 @@
     "normalize.css": "^8.0.1",
     "postcss": "^8.3.6",
     "sass": "^1.36.0"
+  },
+  "devDependencies": {
+    "gulp-image": "^6.2.1"
   }
 }
