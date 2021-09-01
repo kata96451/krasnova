@@ -23,7 +23,7 @@ gulp.task('scss:watch', function () {
     gulp.watch('./src/**/*.scss',  gulp.series(['scss']));});
 
 gulp.task('img', function () {
-    return gulp.src('./img/*')
+    return gulp.src('./img/*.*')
         .pipe(image())
         .pipe(gulp.dest('./dist/img'));
 });

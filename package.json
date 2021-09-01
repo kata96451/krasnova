@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "css:compile": "gulp scss",
-    "css:watch": "gulp scss:watch"
+    "css:watch": "gulp scss:watch",
+    "build:webpack": "webpack",
+    "build:gulp": "gulp scss & gulp img",
+    "build": "gulp scss & gulp img & webpack"
   },
   "repository": {
     "type": "git",
@@ -32,6 +35,8 @@
     "sass": "^1.36.0"
   },
   "devDependencies": {
-    "gulp-image": "^6.2.1"
+    "gulp-image": "^6.2.1",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
   }
 }
