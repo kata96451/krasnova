@@ -1,17 +1,17 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
-
+const { extendDefaultPlugins } = require("svgo");
 
 module.exports = {
     entry: {
         index: [
             path.resolve(__dirname, "src/js/index.js"),
             path.resolve(__dirname, "src/style.scss")
-            ]
+        ]
     },
     output: {
-        path: path.resolve(__dirname, "dist/js"),
+        path: path.resolve(__dirname, "dist"),
         filename: "main.min.js"
     },
     module: {
@@ -34,13 +34,12 @@ module.exports = {
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 type: "asset",
             },
-
         ],
     },
     plugins: [
         new MiniCssExtractPlugin({
-        filename: '../css/[name].css'
-    }),
+            filename: '[name].min.css'
+        }),
         new ImageMinimizerPlugin({
             minimizerOptions: {
                 // Lossless optimization with custom option
@@ -53,30 +52,18 @@ module.exports = {
                     [
                         "svgo",
                         {
-                            plugins: [
+                            plugins: extendDefaultPlugins([
                                 {
-                                    name: 'preset-default',
+                                    name: "removeViewBox",
+                                    active: false,
+                                },
+                                {
+                                    name: "addAttributesToSVGElement",
                                     params: {
-                                        overrides: {
-                                            // customize options for plugins included in preset
-                                            builtinPluginName: {
-                                                optionName: 'optionValue',
-                                            },
-                                            // or disable plugins
-                                            anotherBuiltinPlugin: false,
-                                        },
+                                        attributes: [{ xmlns: "http://www.w3.org/2000/svg" }],
                                     },
                                 },
-                                // Enable builtin plugin not included in preset
-                                'moreBuiltinPlugin',
-                                // Enable and configure builtin plugin not included in preset
-                                {
-                                    name: 'manyBuiltInPlugin',
-                                    params: {
-                                        optionName: 'value',
-                                    },
-                                },
-                            ],
+                            ]),
                         },
                     ],
                 ],
